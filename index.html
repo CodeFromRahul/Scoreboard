@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #714b4b;
+        }
+   
+
+.background-image {
+
+    /* Add any additional styling for the content container */
+    /* For example, you can set padding or margins to position your content */
+    position: relative;
+    border: 2px solid black;
+    border-radius: 12px;
+    opacity: .8;
+    padding: 20px;
+}
+
+        #score {color: white ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            font-size: 408px;
+            user-select: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+        <!-- <img src="./harry.jpg" alt=""> -->
+        <!-- Content goes here -->
+   
+        <!-- <img src="https://pin.it/2UCuD4Q" alt=""> </div> -->
+       <div id="score">0</div>
+
+    <script>
+        // JavaScript to handle score increment on click
+        let score = 0;
+        const scoreElement = document.getElementById('score');
+
+        function increaseScore() {
+            score++;
+            scoreElement.textContent = score;
+        }
+
+        scoreElement.addEventListener('click', increaseScore);
+    </script>
+</body>
+</html>
